@@ -277,9 +277,7 @@ ul {
   font-size: 14px;
   line-height: 1.14;
 }
-.picturetext {
-  margin-bottom: 0px;
-}
+
 .features-list .title {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -303,13 +301,25 @@ ul {
 .examples .examples-list + .examples-list {
   margin-left: 30px;
 }
+.examples-list {
+  position: relative;
+}
 .examples {
   display: flex;
   justify-content: center;
 }
 .picturetext {
+  position: absolute;
+  bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  margin-bottom: 0px;
+  width: 370px;
+  height: 70px;
+
   color: var(--background-color);
-  background-color: rgba(47, 48, 58, 0.8);
+  background: rgba(47, 48, 58, 0.8);
 
   text-transform: uppercase;
   text-align: center;
@@ -664,7 +674,6 @@ footer-social {
 .works {
   text-decoration: none;
 }
-
 .portfolio-title {
   margin-top: 20px;
   margin-bottom: 4px;
@@ -677,6 +686,19 @@ footer-social {
   line-height: 2;
   letter-spacing: 0.06em;
   text-decoration: none;
+}
+/* .animation-text {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+
+  color: var(--background-color);
+  background-color: rgba(33, 150, 243, 0.9);
+} */
+.animation-text:hover {
+  opacity: 1;
 }
 .section-descrp {
   margin-top: 0;
