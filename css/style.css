@@ -646,6 +646,9 @@ footer-social {
 }
 
 /* Portfolio */
+.portfolio-works img {
+  display: block;
+}
 .portfolio-section-style {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -674,6 +677,10 @@ footer-social {
 .works {
   text-decoration: none;
 }
+.animation-container {
+  position: relative;
+  overflow: hidden;
+}
 .portfolio-title {
   margin-top: 20px;
   margin-bottom: 4px;
@@ -687,18 +694,27 @@ footer-social {
   letter-spacing: 0.06em;
   text-decoration: none;
 }
-/* .animation-text {
+.animation-text {
   position: absolute;
-  top: 0;
+  margin: 0;
+  top: 100%;
+  left: 0;
   width: 100%;
   height: 100%;
-  padding: 63px 24px;
+  padding: 63px 23px;
+  transition: all 0.5s linear;
+
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
 
   color: var(--background-color);
   background-color: rgba(33, 150, 243, 0.9);
-} */
-.animation-text:hover {
-  opacity: 1;
+}
+.portfolio-works:hover .animation-text {
+  top: 0;
 }
 .section-descrp {
   margin-top: 0;
