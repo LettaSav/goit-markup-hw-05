@@ -144,7 +144,6 @@ ul {
 }
 .item {
   display: flex;
-
   align-items: center;
   justify-content: center;
 }
@@ -157,6 +156,7 @@ ul {
 .contacts-icon {
   fill: #afb1b8;
   margin-right: 10px;
+
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .item:hover .contacts-icon,
@@ -728,10 +728,6 @@ footer-social {
 .portfolio-works :focus .animation-text,
 .portfolio-works :hover .animation-text {
   transform: translateY(0);
-}
-.portfolio-works :hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .section-descrp {
   margin-top: 0;
